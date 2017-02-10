@@ -1,0 +1,13 @@
+apply plugin: "groovy"
+apply plugin: "application"
+apply plugin: 'war'
+apply from: 'https://raw.github.com/akhikhl/gretty/master/pluginScripts/gretty.plugin'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.4.8'
+    testCompile 'org.spockframework:spock-core:0.7-groovy-2.0'
+}
